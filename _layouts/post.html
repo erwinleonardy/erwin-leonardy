@@ -1,0 +1,72 @@
+---
+layout: page
+---
+
+<div class="content-area single-page-area">
+  <div class="single-page-content">
+
+    <article class="post">
+
+      <div class="post-thumbnail">
+        <img src="{{ page.image_high }}" alt="{{ page.title }}">
+      </div>
+
+      <div class="post-content">
+        <!-- /Entry header -->
+        <header class="entry-header">
+          <!-- Entry meta -->
+          <div class="entry-meta entry-meta-top">
+            <span>{{ page.tag }}</span>        
+          </div>
+          <!-- /Entry meta -->
+
+          <h2 class="entry-title">{{ page.title }}</h2>
+        </header>
+        <!-- /Entry header -->
+
+        <!-- Content -->
+        {{ content }}
+        <!-- End of Content -->
+
+        <div class="entry-meta entry-meta-bottom">
+          <div class="date-author unselectable">
+            <span class="entry-date">
+              <i class="far fa-clock"></i> <span class="entry-date"> {{ page.date | date: "%B %-d, %Y" }}</span>
+            </span>
+            <span class="author vcard">
+             <i class="fas fa-user"></i> {{ page.author }}
+            </span>
+          </div>
+
+          <!-- Share Buttons -->
+          <!-- <div class="entry-share btn-group share-buttons">
+            <a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            
+            <a href="#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="btn" target="_blank" title="Share on Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn" title="Share on LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div> -->
+          <!-- /Share Buttons -->
+        </div>
+
+        <!-- <div class="post-tags">
+          <div class="tags">
+            {% for tag in site.tags %}
+              {% assign t = tag | first %}
+              {% assign posts = tag | last %}
+              <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+              <a href="#" rel="tag">{{t | downcase | replace:" ","-" }}</a>
+            {% endfor %}
+          </div>
+        </div> -->
+      </div>
+    </article>
+
+  </div>
+</div>
