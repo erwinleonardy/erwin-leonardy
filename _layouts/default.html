@@ -9,7 +9,7 @@
 
     <!-- Animated Background -->
     {% if site.url != "http://localhost:4000" %}
-      <div class="lm-animated-bg" style="background-image: url('{{ site.baseurl | prepend: site.url }}/img/main_bg.png')"></div>
+      <div class="lm-animated-bg" style="background-image: url('{{ site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}/img/main_bg.png')"></div>
     {% else %}
       <div class="lm-animated-bg" style="background-image: url(/img/main_bg.png)"></div>
     {% endif %}
