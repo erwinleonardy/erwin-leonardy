@@ -1,10 +1,3 @@
-/*
-* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.2.0
-*/
-
 var PageTransitions = (function ($, options) {
 "use strict";
     var sectionsContainer = $(".animated-sections"),
@@ -24,6 +17,30 @@ var PageTransitions = (function ($, options) {
 
         // support css animations
         support = Modernizr.cssanimations;
+
+    function removeHash () { 
+        var scrollV, scrollH, loc = window.location;
+        // console.log(document.title, loc.pathname+loc.search)
+        if ("pushState" in history) {
+            // console.log(window.location)
+            if (window.location.href === (window.location.origin + "/#")) {
+                history.replaceState("", document.title, window.location);
+            }
+            else
+                history.replaceState("", document.title, loc.pathname + loc.search);
+        }
+        else {
+            // Prevent scrolling by storing the page's current scroll offset
+            scrollV = document.body.scrollTop;
+            scrollH = document.body.scrollLeft;
+    
+            loc.hash = "";
+    
+            // Restore the scroll offset, should be flicker free
+            document.body.scrollTop = scrollV;
+            document.body.scrollLeft = scrollH;
+        }
+    }
 
     function init(options) {
 
@@ -52,7 +69,7 @@ var PageTransitions = (function ($, options) {
 
             Animate( pageTrigger );
 
-            location.hash = $(this).attr('href');
+            // location.hash = $(this).attr('href');
 
         });
 
@@ -62,6 +79,7 @@ var PageTransitions = (function ($, options) {
                     return false;
                 }
                 var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
+                removeHash();
                 activeMenuItem( menuLink );
                 Animate(menuLink);
 
@@ -72,8 +90,12 @@ var PageTransitions = (function ($, options) {
         var menu = options.menu,
         pageStart = getActiveSection();
 
-        location.hash = pageStart;
+        console.log(pageStart)
+
+        location.hash = pageStart ? pageStart : 'home';
         var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
+
+        removeHash();
 
         activeMenuItem(menuLink);
 
@@ -116,10 +138,21 @@ var PageTransitions = (function ($, options) {
         var navLink = $(item);
         navLink = navLink['0'];
         navLink = $(navLink);
-            
-        if(navLink) {
+
+        console.log(navLink.length);
+        console.log($('section.animated-section').first().attr('data-id'))
+
+        if(navLink && navLink.length > 0) {
             $('ul.main-menu a').removeClass('active');
             navLink.addClass('active');
+            removeHash();    
+        }
+        else {
+            console.log($('section.animated-section').first().attr('data-id'))
+            if ($('section.animated-section').first().attr('data-id'))
+                return location.hash = $('section.animated-section').first().attr('data-id');
+            else 
+                return location.hash = '';   
         }
     }
 
@@ -174,6 +207,9 @@ var PageTransitions = (function ($, options) {
             var animNumber = parseInt(Math.floor(Math.random() * 67) + 1);
             $pageTrigger.data('animation',animNumber);
         }
+
+        if (!$pageTrigger.data('animation'))
+            return;
 
         var animation = $pageTrigger.data('animation').toString(),
             gotoPage, inClass, outClass, selectedAnimNumber;

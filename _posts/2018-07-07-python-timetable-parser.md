@@ -34,7 +34,7 @@ Upon surmounting BeautifulSoup, I had to start dabbling on the .ics file format.
 The best way to pick up a programming language is by doing a project! Please do persevere no matter how hard it is. Trust me, it is going to be rewarding! If you are interested, you can look at my codes on [Github](https://github.com/erwinleonardy/Visual-Cryptography).
 
 <div class="container">
-	<div class="row" style="width: 500px">
+	<div class="row">
 		<div class="col-sm-12 col-md-12 portfolio-block">
 			<div class="owl-carousel portfolio-page-carousel">
 				<div class="item">
