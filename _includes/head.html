@@ -16,27 +16,28 @@
     <meta name="description" content="Erwin Leonardy" />
     <meta name="keywords" content="Erwin is one of the Founders of Pengacaramu, an online legal marketplace that aims to solve the trust issues between lawyers and clients. Erwin is a computer science graduate with a passion for mentoring, problem solving, and working in a team." />
     <meta name="author" content="Erwin Leonardy" />
-    <link rel="shortcut icon" href="/favicon.ico">
 
-
-    <link rel="stylesheet" href="/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="/css/bootstrap-grid.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/animations.css" type="text/css">
-    <link rel="stylesheet" href="/css/perfect-scrollbar.css" type="text/css">
-    <link rel="stylesheet" href="/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
-
-    <!-- <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/bootstrap-grid.min.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/animations.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/perfect-scrollbar.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/owl.carousel.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/magnific-popup.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" type="text/css">
-     -->
-    
-     <script src="/js/modernizr.custom.js"></script>
+    {% if site.url != "http://localhost:4000" %}
+        <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}">
+        <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/bootstrap-grid.mincss" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/animationscss" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/perfect-scrollbarcss" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/owl.carouselcss" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/magnific-popupcss" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/maincss" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" type="text/css">
+        <script src="{{ "/js/modernizr.custom.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
+    {% else %}
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/css/reset.css" type="text/css">
+        <link rel="stylesheet" href="/css/bootstrap-grid.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/animations.css" type="text/css">
+        <link rel="stylesheet" href="/css/perfect-scrollbar.css" type="text/css">
+        <link rel="stylesheet" href="/css/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="/css/main.css" type="text/css">
+        <script src="/js/modernizr.custom.js"></script>
+    {% endif %}
 </head>
 
 <!--

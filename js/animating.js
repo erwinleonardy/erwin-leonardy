@@ -90,7 +90,7 @@ var PageTransitions = (function ($, options) {
         var menu = options.menu,
         pageStart = getActiveSection();
 
-        console.log(pageStart)
+        console.log(pageStart);
 
         location.hash = pageStart ? pageStart : 'home';
         var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');

@@ -1,7 +1,11 @@
 <header id="site_header" class="header mobile-menu-hide">
     <div class="header-content">
       <div class="header-photo">
-        <img src="/img/main_photo.png" alt="Alex Smith">
+        {% if site.url != "http://localhost:4000" %}
+          <img src="{{ "/img/main_photo.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" alt="Erwin Leonardy">
+        {% else %}
+          <img src="/img/main_photo.png" alt="Erwin Leonardy">
+        {% endif %}
       </div>
       <div class="header-titles">
         <h2>Erwin Leonardy</h2>
@@ -56,9 +60,11 @@
     </div>
 
     <div class="header-buttons">
+      {% if site.url != "http://localhost:4000" %}
+        <a href="{{ "/files/erwin_leonardy_resume.pdf" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" download="Erwin Leonardy Resume" class="btn btn-primary">Download Resume</a>
+      {% else %}
         <a href="/files/erwin_leonardy_resume.pdf" download="Erwin Leonardy Resume" class="btn btn-primary">Download Resume</a>
-        <!-- <a href="{{ "/files/Erwin_Leonardy_Resume.pdf" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" download="Erwin Leonardy CV" class="btn btn-primary">Download Resume</a> -->
-        <!-- <a href="#" target="_blank" class="btn btn-primary">Download Resume</a> -->
+      {% endif %}
     </div>
 
     <div class="copyrights">© 2020 All rights reserved.</div>

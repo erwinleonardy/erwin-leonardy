@@ -17,7 +17,11 @@
                             <a class="unselectable">Startup</a>
                         </div>
                         <a href="https://medium.com/@erwinleonardy/mustering-up-the-temerity-to-start-a-startup-in-these-uncertain-times-12ec537e5f55" title="Mustering up the Temerity to Start a Startup in These Uncertain Times">
-                            <img src="/img/blog/medium_31_aug_2020/medium_31_aug_2020.png" class="size-blog-masonry-image-two-c" alt="Mustering up the Temerity to Start a Startup in These Uncertain Times" title="Mustering up the Temerity to Start a Startup in These Uncertain Times" />
+                            {% if site.url != "http://localhost:4000" %}
+                                <img src="{{ "/img/blog/medium_31_aug_2020/medium_31_aug_2020.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="size-blog-masonry-image-two-c" alt="Mustering up the Temerity to Start a Startup in These Uncertain Times" title="Mustering up the Temerity to Start a Startup in These Uncertain Times" />
+                            {% else %}
+                                <img src="/img/blog/medium_31_aug_2020/medium_31_aug_2020.png" class="size-blog-masonry-image-two-c" alt="Mustering up the Temerity to Start a Startup in These Uncertain Times" title="Mustering up the Temerity to Start a Startup in These Uncertain Times" />
+                            {% endif %}
                             <div class="mask"></div>
                         </a>
                     </div>
@@ -40,7 +44,11 @@
                                 <a class="unselectable">{{ post.tag }}</a>
                             </div>
                             <a href="{{ post.url }}" title="{{ post.title }}">
-                                <img src="{{ post.image }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" />
+                                {% if site.url != "http://localhost:4000" %}
+                                    <img src="{{ post.image | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" />
+                                {% else %}
+                                    <img src="{{ post.image }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" />
+                                {% endif %}
                                 <div class="mask"></div>
                             </a>
                         </div>

@@ -16,7 +16,11 @@ During my short-three-weeks break, I attempted to automate this tedious process 
 ##### Technical details
 Caveat: It is going to be a bit technical from here onwards. For those of you who are interested in the technicalities, by all means you may continue reading this post.
 
+{% if site.url != "http://localhost:4000" %}
+<img src="{{ "/img/blog/python_timetable_parser/image1.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"width="400" alt="Screenshot of a terminal output" class="image-center" />
+{% else %}
 <img src="/img/blog/python_timetable_parser/image1.png" width="400" alt="Screenshot of a terminal output" class="image-center" />
+{% endif %}
 
 ##### I picked up Python!
 I tried to search for a library that is able to parse HTML tags in Python. Alas! I found BeautifulSoup4 that works impeccably in parsing HTML tags. The learning curve wasn't that steep because I have a foundation in C, C++, PHP, and Java. I spent one last week of my holiday coding this script from scratch. Frankly, there is this sense of achievement when i completed my script and started sharing it with my friends. 
@@ -44,9 +48,15 @@ The best way to pick up a programming language is by doing a project! Please do 
 					<img src="/img/blog/python_timetable_parser/image3.png" alt="Screenshot of a terminal output" height="420"/>
 				</div>
 			</div>
-			<script src="/js/jquery-2.1.3.min.js"></script>
-			<script src="/js/imagesloaded.pkgd.min.js"></script>
-			<script src='/js/owl.carousel.min.js'></script>
+			{% if site.url != "http://localhost:4000" %}
+				<script src="{{ "/js/jquery-2.1.3.min.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
+				<script src="{{ "/js/imagesloaded.pkgd.min.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
+				<script src="{{ "/js/owl.carousel.min.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
+			{% else %}
+				<script src="/js/jquery-2.1.3.min.js"></script>
+				<script src="/js/imagesloaded.pkgd.min.js"></script>
+				<script src='/js/owl.carousel.min.js'></script>
+			{% endif %}
 			<script type="text/javascript">
 				jQuery(document).ready(function($){
 					$('.portfolio-page-carousel').imagesLoaded(function(){
