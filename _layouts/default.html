@@ -8,12 +8,11 @@
   <body>
 
     <!-- Animated Background -->
-    <!-- {% if site.url != "http://localhost:4000" %}
-        <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}">
-        <div class="lm-animated-bg" style="background-image: url({{ "/img/main_bg.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }});"></div>
-    {% else %} -->
+    {% if site.url != "http://localhost:4000" %}
+      <div class="lm-animated-bg" style="background-image: url('{{ \'/favicon.ico\' | prepend: site.baseurl | prepend: site.github_repository | prepend: \'/\' | prepend: site.url }}/img/main_bg.png')"></div>
+    {% else %}
       <div class="lm-animated-bg" style="background-image: url(/img/main_bg.png)"></div>
-    <!-- {% endif %} -->
+    {% endif %}
     <!-- /Animated Background -->
 
     <!-- Loading animation -->

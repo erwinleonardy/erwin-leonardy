@@ -23,7 +23,7 @@ email: erwin.leonardy30@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Erwin is one of the Founders of Pengacaramu, an online legal marketplace that aims to solve the trust issues between lawyers and clients. Erwin is a computer science graduate with a passion for mentoring, problem solving, and working in a team.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://erwinleonardy.github.io/erwin-leonardy/" # the base hostname & protocol for your site, e.g. http://example.com 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com 
 github_username:  erwinleonardy
 github_repository: erwin-leonardy
 
