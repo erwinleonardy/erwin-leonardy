@@ -90,7 +90,7 @@ var PageTransitions = (function ($, options) {
         var menu = options.menu,
         pageStart = getActiveSection();
 
-        console.log(pageStart);
+        // console.log(pageStart);
 
         location.hash = pageStart ? pageStart : 'home';
         var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
@@ -139,8 +139,8 @@ var PageTransitions = (function ($, options) {
         navLink = navLink['0'];
         navLink = $(navLink);
 
-        console.log(navLink.length);
-        console.log($('section.animated-section').first().attr('data-id'))
+        // console.log(navLink.length);
+        // console.log($('section.animated-section').first().attr('data-id'))
 
         if(navLink && navLink.length > 0) {
             $('ul.main-menu a').removeClass('active');
@@ -148,7 +148,7 @@ var PageTransitions = (function ($, options) {
             removeHash();    
         }
         else {
-            console.log($('section.animated-section').first().attr('data-id'))
+            // console.log($('section.animated-section').first().attr('data-id'))
             if ($('section.animated-section').first().attr('data-id'))
                 return location.hash = $('section.animated-section').first().attr('data-id');
             else 
