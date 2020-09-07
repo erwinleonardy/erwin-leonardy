@@ -8,7 +8,11 @@ layout: page
     <article class="post">
 
       <div class="post-thumbnail">
-        <img src="{{ page.image_high }}" alt="{{ page.title }}">
+        {% if site.url != "http://localhost:4000" %}
+          <img src="{{ page.image_high | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" alt="{{ page.title }}">
+        {% else %}
+          <img src="{{ page.image_high }}" alt="{{ page.title }}">
+        {% endif %}
       </div>
 
       <div class="post-content">

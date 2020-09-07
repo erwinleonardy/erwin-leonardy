@@ -40,19 +40,27 @@ The best way to pick up a programming language is by doing a project! Please do 
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-md-12 portfolio-block">
-			<div class="owl-carousel portfolio-page-carousel">
-				<div class="item">
-					<img src="/img/blog/python_timetable_parser/image2.png" alt="Screenshot of a terminal output" height="420" />
-				</div>
-				<div class="item">
-					<img src="/img/blog/python_timetable_parser/image3.png" alt="Screenshot of a terminal output" height="420"/>
-				</div>
-			</div>
 			{% if site.url != "http://localhost:4000" %}
+				<div class="owl-carousel portfolio-page-carousel">
+					<div class="item">
+						<img src="{{ "/img/blog/python_timetable_parser/image2.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" alt="Screenshot of a terminal output" height="420" />
+					</div>
+					<div class="item">
+						<img src="{{ "/img/blog/python_timetable_parser/image3.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" alt="Screenshot of a terminal output" height="420" />
+					</div>
+				</div>
 				<script src="{{ "/js/jquery-2.1.3.min.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
 				<script src="{{ "/js/imagesloaded.pkgd.min.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
 				<script src="{{ "/js/owl.carousel.min.js" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"></script>
 			{% else %}
+				<div class="owl-carousel portfolio-page-carousel">
+					<div class="item">
+						<img src="/img/blog/python_timetable_parser/image2.png" alt="Screenshot of a terminal output" height="420" />
+					</div>
+					<div class="item">
+						<img src="/img/blog/python_timetable_parser/image3.png" alt="Screenshot of a terminal output" height="420"/>
+					</div>
+				</div>
 				<script src="/js/jquery-2.1.3.min.js"></script>
 				<script src="/js/imagesloaded.pkgd.min.js"></script>
 				<script src='/js/owl.carousel.min.js'></script>
