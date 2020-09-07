@@ -1735,7 +1735,7 @@ textarea.form-control, textarea.form-control:focus {
   padding: 1em 1.4em 1.4em;
   border: 1px solid #444;
   border-top: 0;
-  height: 130px;
+  /* height: 130px; */
 }
 
 .blog-card .blog-item-title {
