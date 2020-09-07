@@ -43,7 +43,7 @@
                                 <!-- <a href="{{ post.url | prepend: site.baseurl | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" title="{{ post.tag }}">{{ post.tag }}</a> -->
                                 <a class="unselectable">{{ post.tag }}</a>
                             </div>
-                            <a href="{{ post.url | prepend: site.baseurl | prepend: github_repository_with_slash| prepend: site.url }}" title="{{ post.title }}">
+                            <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.title }}">
                                 {% if site.url != "http://localhost:4000" %}
                                     <img src="{{ post.image | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" />
                                 {% else %}
@@ -56,7 +56,7 @@
                             <div class="post-date">{{ post.date | date_to_long_string }}</div>
                             <!-- <a href="{{ post.url | prepend: site.baseurl | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}"> -->
                             {% if site.url != "http://localhost:4000" %}
-                                <a href="{{ post.url | prepend: site.baseurl | prepend: github_repository_with_slash| prepend: site.url }}" title="{{ post.title }}">
+                                <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.title }}">
                                     <h4 class="blog-item-title">{{ post.title }}</h4>
                                 </a>
                             {% else %}
