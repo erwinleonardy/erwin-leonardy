@@ -16,7 +16,7 @@ During my short-three-weeks break, I attempted to automate this tedious process 
 ##### Technical details
 Caveat: It is going to be a bit technical from here onwards. For those of you who are interested in the technicalities, by all means you may continue reading this post.
 
-{% if site.url != "http://localhost:4000" %}
+{% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
 <img src="{{ "/img/blog/python_timetable_parser/image1.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}"width="400" alt="Screenshot of a terminal output" class="image-center" />
 {% else %}
 <img src="/img/blog/python_timetable_parser/image1.png" width="400" alt="Screenshot of a terminal output" class="image-center" />
@@ -40,7 +40,7 @@ The best way to pick up a programming language is by doing a project! Please do 
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-md-12 portfolio-block">
-			{% if site.url != "http://localhost:4000" %}
+			{% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
 				<div class="owl-carousel portfolio-page-carousel">
 					<div class="item">
 						<img src="{{ "/img/blog/python_timetable_parser/image2.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" alt="Screenshot of a terminal output" height="420" />

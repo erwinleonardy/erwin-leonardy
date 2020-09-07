@@ -8,7 +8,7 @@ layout: page
     <article class="post">
 
       <div class="post-thumbnail">
-        {% if site.url != "http://localhost:4000" %}
+        {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
           <img src="{{ page.image_high | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" alt="{{ page.title }}">
         {% else %}
           <img src="{{ page.image_high }}" alt="{{ page.title }}">

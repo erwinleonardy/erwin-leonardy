@@ -17,7 +17,7 @@
                             <a class="unselectable">Startup</a>
                         </div>
                         <a href="https://medium.com/@erwinleonardy/mustering-up-the-temerity-to-start-a-startup-in-these-uncertain-times-12ec537e5f55" title="Mustering up the Temerity to Start a Startup in These Uncertain Times">
-                            {% if site.url != "http://localhost:4000" %}
+                            {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
                                 <img src="{{ "/img/blog/medium_31_aug_2020/medium_31_aug_2020.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="size-blog-masonry-image-two-c" alt="Mustering up the Temerity to Start a Startup in These Uncertain Times" title="Mustering up the Temerity to Start a Startup in These Uncertain Times" />
                             {% else %}
                                 <img src="/img/blog/medium_31_aug_2020/medium_31_aug_2020.png" class="size-blog-masonry-image-two-c" alt="Mustering up the Temerity to Start a Startup in These Uncertain Times" title="Mustering up the Temerity to Start a Startup in These Uncertain Times" />
@@ -43,19 +43,22 @@
                                 <!-- <a href="{{ post.url | prepend: site.baseurl | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" title="{{ post.tag }}">{{ post.tag }}</a> -->
                                 <a class="unselectable">{{ post.tag }}</a>
                             </div>
-                            <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.title }}">
-                                {% if site.url != "http://localhost:4000" %}
+                            {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
+                                <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.title }}">
                                     <img src="{{ post.image | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" />
-                                {% else %}
+                                    <div class="mask"></div>
+                                </a>
+                            {% else %}
+                                <a href="{{ post.url }}">
                                     <img src="{{ post.image }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" />
-                                {% endif %}
-                                <div class="mask"></div>
-                            </a>
+                                    <div class="mask"></div>
+                                </a>
+                            {% endif %}
                         </div>
                         <div class="post-info">
                             <div class="post-date">{{ post.date | date_to_long_string }}</div>
                             <!-- <a href="{{ post.url | prepend: site.baseurl | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}"> -->
-                            {% if site.url != "http://localhost:4000" %}
+                            {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
                                 <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.title }}">
                                     <h4 class="blog-item-title">{{ post.title }}</h4>
                                 </a>
