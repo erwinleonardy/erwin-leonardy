@@ -19,7 +19,6 @@
                 </div>
                 {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
                   <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.title }}">
-                    <!-- <img src="{{ post.image | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="size-blog-masonry-image-two-c" alt="{{ post.title }}" title="{{ post.title }}" /> -->
                     {% include lazyload.html image_src="{{ post.image | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" image_alt="{{ post.title }}" image_title="{{ post.title }}" img_class="size-blog-masonry-image-two-c" %}
                     <div class="mask"></div>
                   </a>
