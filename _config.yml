@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,9 +21,9 @@
 title: Erwin Leonardy
 email: erwin.leonardy30@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Erwin is one of the Founders of Pengacaramu, an online legal marketplace that aims to solve the trust issues between lawyers and clients. Erwin is a computer science graduate with a passion for mentoring, problem solving, and working in a team.
+  Erwin is a Product Engineer @ Gojek who has worked on multiple web development stacks (React, Django, Flask, Rails, Node.js) throughout his professional career.
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://erwinleonardy.com" # the base hostname & protocol for your site, e.g. http://example.com 
+url: "https://erwinleonardy.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  erwinleonardy
 github_repository: erwin-leonardy
 github_repository_with_slash: /erwin-leonardy
