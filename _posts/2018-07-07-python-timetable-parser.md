@@ -7,8 +7,8 @@ image: /img/blog/python_timetable_parser/python_timetable_parser.png
 image_high: /img/blog/python_timetable_parser/python_timetable_parser_full.png
 ---
 
-<!-- https://github.com/erwinleonardy/erwin-leonardy/tree/master/img/portfolio/birthday -->
-{% include image-gallery.html folder="/portfolio/birthday"   %}
+<!-- TODO: This is a test. Delete me! -->
+{% include image-gallery-big-screen.html folder="/portfolio/birthday" title="Birthday Event" %}
 
 ##### Problem statement...
 The fact that there is no way to export the timetable of my lectures and tutorials in an .ics file which i can import to my calendar and sync to all of my devices really ruffles my feathers. I would resort on typing all of the timetables manually, since I am an organised person who prefers everything to be in my calendar in lieu of having everything "screenshot-ed"! I often lose track of the pictures i take, so I would normally put important dates and tasks on my calendar and Todoist (I will talk more about this awesome productivity app in the future blog).
