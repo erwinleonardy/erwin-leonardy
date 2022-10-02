@@ -23,7 +23,7 @@ Caveat: It is going to be a bit technical from here onwards. For those of you wh
 {% endif %}
 
 ##### I picked up Python!
-I tried to search for a library that is able to parse HTML tags in Python. Alas! I found BeautifulSoup4 that works impeccably in parsing HTML tags. The learning curve wasn't that steep because I have a foundation in C, C++, PHP, and Java. I spent one last week of my holiday coding this script from scratch. Frankly, there is this sense of achievement when i completed my script and started sharing it with my friends. 
+I tried to search for a library that is able to parse HTML tags in Python. Alas! I found BeautifulSoup4 that works impeccably in parsing HTML tags. The learning curve wasn't that steep because I have a foundation in C, C++, PHP, and Java. I spent one last week of my holiday coding this script from scratch. Frankly, there is this sense of achievement when i completed my script and started sharing it with my friends.
 
 ##### How it works?
 Firstly, this is the menu that the script will prompt you once you run the python script. It will search through your current working directory recursively for all of the HTML files. You will subsequently need to enter the file that contains the particular timetable you want to extract. For this demonstration, I am going to choose the first one.
@@ -32,10 +32,10 @@ After processing it, it will show you some key information such as: the subjects
 
 Frankly, I would like to say that BeautifulSoup4 is very well documented. I didn't have any difficulties navigating the online documents. Although, I would highly encourage you to read up about HTML before even attempting to use BeautifulSoup. You must what are 'id' and 'class' in bare minimum.
 
-Upon surmounting BeautifulSoup, I had to start dabbling on the .ics file format. I would like to point out that the documentation of the iCalendar format (ics) is really poorly documented. I had to learn the syntax through trials and errors, since there is no crystal-clear documentation on iCalendar. 
+Upon surmounting BeautifulSoup, I had to start dabbling on the .ics file format. I would like to point out that the documentation of the iCalendar format (ics) is really poorly documented. I had to learn the syntax through trials and errors, since there is no crystal-clear documentation on iCalendar.
 
 ##### Conclusion
-The best way to pick up a programming language is by doing a project! Please do persevere no matter how hard it is. Trust me, it is going to be rewarding! If you are interested, you can look at my codes on [Github](https://github.com/erwinleonardy/Visual-Cryptography).
+The best way to pick up a programming language is by doing a project! Please do persevere no matter how hard it is. Trust me, it is going to be rewarding! If you are interested, you can look at my codes on [Github](https://github.com/erwinleonardy/UOW-Calendar-Parser).
 
 <div class="container">
 	<div class="row">
