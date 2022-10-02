@@ -25,7 +25,6 @@
           {% else %}
             <img src="{{ site.url | replace: 'localhost:4000//','' | replace: 'https://','' }}{{ file.path | relative_url }}" alt="{{ filename }}" title="{{ filename }}" />
           {% endif %}
-
           <span>{{ filename }}</span>
         </a>
       </li>
@@ -33,3 +32,10 @@
     {% endif %}
   {% endfor %}
 </ul>
+
+<!-- TODO: 404, somehow PROD server goes to the else block -->
+Debug:
+- {{ relative_url }}
+- {{ site.baseurl }}
+- {{ site.github_repository }}
+- {{ site.url }}
