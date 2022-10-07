@@ -1,107 +1,117 @@
 <header id="site_header" class="header mobile-menu-hide">
-    <div class="header-content">
-      <div class="header-photo">
-        {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
-          <img src="{{ "/img/main_photo.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" alt="Erwin Leonardy">
-        {% else %}
-          <img src="/img/main_photo.png" alt="Erwin Leonardy">
-        {% endif %}
-      </div>
-      <div class="header-titles">
-        <h2>Erwin Leonardy</h2>
-        <h4>Product Engineer at <a href="https://www.gojek.com/" target="_blank">Gojek</a>, Goto</h4>
-        <h4>Ex-Backend Engineer at Xfers, <a href="https://fazz.com/", target="_blank">Fazz</a></h4>
-      </div>
-    </div>
-
-    {% if page.url != "/404.html" %}
-      <ul class="main-menu">
-        {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
-          <li class="active">
-            <a href="{{ "/#home" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="nav-anim">
-              <span class="menu-icon lnr lnr-home"></span>
-              <span class="link-text">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ "/#about-me" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="nav-anim">
-              <span class="menu-icon lnr lnr-user"></span>
-              <span class="link-text">About Me</span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ "/#portfolio" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="nav-anim">
-              <span class="menu-icon lnr lnr-book"></span>
-              <span class="link-text">Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ "/#resume" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="nav-anim">
-              <span class="menu-icon lnr lnr-graduation-hat"></span>
-              <span class="link-text">Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ "/#blog" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" class="nav-anim">
-              <span class="menu-icon lnr lnr-book"></span>
-              <span class="link-text">Blog</span>
-            </a>
-          </li>
-        {% else %}
-          <li class="active">
-            <a href="/#home" class="nav-anim">
-              <span class="menu-icon lnr lnr-home"></span>
-              <span class="link-text">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="/#about-me" class="nav-anim">
-              <span class="menu-icon lnr lnr-user"></span>
-              <span class="link-text">About Me</span>
-            </a>
-          </li>
-          <li>
-            <a href="/#portfolio" class="nav-anim">
-              <span class="menu-icon lnr lnr-briefcase"></span>
-              <span class="link-text">Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="/#resume" class="nav-anim">
-              <span class="menu-icon lnr lnr-graduation-hat"></span>
-              <span class="link-text">Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href="/#blog" class="nav-anim">
-              <span class="menu-icon lnr lnr-book"></span>
-              <span class="link-text">Blog</span>
-            </a>
-          </li>
-        {% endif %}
-      </ul>
-      {% endif %}
-
-    <div class="social-links">
-      <ul>
-        <li><a href="https://github.com/erwinleonardy" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://stackoverflow.com/users/5035395/erwinleonardy" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/erwin-leonardy/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://erwinleonardy.medium.com/" target="_blank"><i class="fab fa-medium"></i></a></li>
-        <li><a href="https://www.goodreads.com/erwinleonardy" target="_blank"><i class="fab fa-goodreads"></i></a></li>
-        <li><a href="https://www.instagram.com/erwinleonardy/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/erwin.leonardy/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="mailto:erwin.leonardy30@gmail.com" target="_blank"><i class="fas fa-envelope"></a></i></li>
-      </ul>
-    </div>
-
-    <div class="header-buttons">
-      {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
-        <a href="{{ "/files/erwin_leonardy_resume.pdf" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url }}" download="Erwin Leonardy Resume" class="btn btn-primary">Download Resume</a>
+  <div class="header-content">
+    <div class="header-photo">
+      {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/" %}
+      <img src="{{ " /img/main_photo.png" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" |
+        prepend: site.url }}" alt="Erwin Leonardy">
       {% else %}
-        <a href="/files/erwin_leonardy_resume.pdf" download="Erwin Leonardy Resume" class="btn btn-primary">Download Resume</a>
+      <img src="/img/main_photo.png" alt="Erwin Leonardy">
       {% endif %}
     </div>
+    <div class="header-titles">
+      <h2>Erwin Leonardy</h2>
+      <h4>Product Engineer at <a href="https://www.gojek.com/" target="_blank">Gojek</a>, Goto</h4>
+      <h4>Ex-Backend Engineer at Xfers, <a href="https://fazz.com/" , target="_blank">Fazz</a></h4>
+    </div>
+  </div>
 
-    <div class="copyrights">© 2020 - {{ site.time | date: '%Y' }} All rights reserved.</div>
+  {% if page.url != "/404.html" %}
+  <ul class="main-menu">
+    {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/" %}
+    <li class="active">
+      <a href="{{ " /#home" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url
+        }}" class="nav-anim">
+        <span class="menu-icon lnr lnr-home"></span>
+        <span class="link-text">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ " /#about-me" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend:
+        site.url }}" class="nav-anim">
+        <span class="menu-icon lnr lnr-user"></span>
+        <span class="link-text">About Me</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ " /#portfolio" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend:
+        site.url }}" class="nav-anim">
+        <span class="menu-icon lnr lnr-book"></span>
+        <span class="link-text">Portfolio</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ " /#resume" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend:
+        site.url }}" class="nav-anim">
+        <span class="menu-icon lnr lnr-graduation-hat"></span>
+        <span class="link-text">Resume</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ " /#blog" | prepend: site.baseurl | prepend: site.github_repository | prepend: "/" | prepend: site.url
+        }}" class="nav-anim">
+        <span class="menu-icon lnr lnr-book"></span>
+        <span class="link-text">Blog</span>
+      </a>
+    </li>
+    {% else %}
+    <li class="active">
+      <a href="/#home" class="nav-anim">
+        <span class="menu-icon lnr lnr-home"></span>
+        <span class="link-text">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="/#about-me" class="nav-anim">
+        <span class="menu-icon lnr lnr-user"></span>
+        <span class="link-text">About Me</span>
+      </a>
+    </li>
+    <li>
+      <a href="/#portfolio" class="nav-anim">
+        <span class="menu-icon lnr lnr-briefcase"></span>
+        <span class="link-text">Portfolio</span>
+      </a>
+    </li>
+    <li>
+      <a href="/#resume" class="nav-anim">
+        <span class="menu-icon lnr lnr-graduation-hat"></span>
+        <span class="link-text">Resume</span>
+      </a>
+    </li>
+    <li>
+      <a href="/#blog" class="nav-anim">
+        <span class="menu-icon lnr lnr-book"></span>
+        <span class="link-text">Blog</span>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+  {% endif %}
+
+  <div class="social-links">
+    <ul>
+      <li><a href="https://github.com/erwinleonardy" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://stackoverflow.com/users/5035395/erwinleonardy" target="_blank"><i
+            class="fab fa-stack-overflow"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/erwin-leonardy/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </li>
+      <li><a href="https://erwinleonardy.medium.com/" target="_blank"><i class="fab fa-medium"></i></a></li>
+      <li><a href="https://www.goodreads.com/erwinleonardy" target="_blank"><i class="fab fa-goodreads"></i></a></li>
+      <li><a href="https://www.instagram.com/erwinleonardy/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.facebook.com/erwin.leonardy/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="mailto:erwin.leonardy30@gmail.com" target="_blank"><i class="fas fa-envelope"></a></i></li>
+    </ul>
+  </div>
+
+  <div class="header-buttons">
+    {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/" %}
+    <a href="{{ " /files/erwin_leonardy_resume.pdf" | prepend: site.baseurl | prepend: site.github_repository |
+      prepend: "/" | prepend: site.url }}" download="Erwin Leonardy Resume" class="btn btn-primary">Download Resume</a>
+    {% else %}
+    <a href="/files/erwin_leonardy_resume.pdf" download="Erwin Leonardy Resume" class="btn btn-primary">Download
+      Resume</a>
+    {% endif %}
+  </div>
+
+  <div class="copyrights">© 2020 - {{ site.time | date: '%Y' }} All rights reserved.</div>
 </header>

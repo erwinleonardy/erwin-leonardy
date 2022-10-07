@@ -235,6 +235,52 @@ input[type="submit"]:focus {
   margin-bottom: 20px;
 }
 
+.callout {
+  --cui-callout-padding-x: 1rem;
+  --cui-callout-padding-y: 1rem;
+  --cui-callout-margin-x: 0;
+  --cui-callout-margin-y: 1rem;
+  --cui-callout-border-width: 1px;
+  --cui-callout-border-color: #d8dbe0;
+  --cui-callout-border-left-width: 4px;
+  --cui-callout-border-radius: 0.375rem;
+  padding: var(--cui-callout-padding-y) var(--cui-callout-padding-x);
+  margin: var(--cui-callout-margin-y) var(--cui-callout-margin-x);
+  border: var(--cui-callout-border-width) solid var(--cui-callout-border-color);
+  border-radius: var(--cui-callout-border-radius);
+}
+html:not([dir=rtl]) .callout {
+  border-left-width: var(--cui-callout-border-left-width);
+  border-left-color: var(--cui-callout-border-left-color);
+}
+[dir=rtl] .callout {
+  border-right-width: var(--cui-callout-border-right-width);
+  border-right-color: var(--cui-callout-border-right-color);
+}
+.callout-primary {
+  --cui-callout-border-left-color: #321fdb;
+}
+.callout-secondary {
+  --cui-callout-border-left-color: #9da5b1;
+}
+.callout-success {
+  --cui-callout-border-left-color: #2eb85c;
+}
+.callout-danger {
+  --cui-callout-border-left-color: #e55353;
+}
+.callout-warning {
+  --cui-callout-border-left-color: #f9b115;
+}
+.callout-info {
+  --cui-callout-border-left-color: #39f;
+}
+.callout-light {
+  --cui-callout-border-left-color: #ebedef;
+}
+.callout-dark {
+  --cui-callout-border-left-color: #4f5d73;
+}
 
 /* =============================================================================
 3. Page loadig animation
@@ -861,7 +907,27 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* /Form controls */
 
-
+// image galery
+.image-gallery {
+  overflow: auto;
+  margin-left: -1% !important;
+}
+.image-gallery li a {
+  text-align: center;
+  text-decoration: none !important;
+  color: #777;
+}
+.image-gallery li a span {
+  display: block;
+  stext-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 3px 0;
+}
+.image-gallery li a img {
+  width: 100%;
+  display: block;
+}
 
 
 /* ------------------------------------------------------------
@@ -2293,11 +2359,25 @@ blockquote {
   .content-area {
     max-width: calc(100% - 330px);
   }
+
+  .image-gallery li {
+    float: left;
+    display: block;
+    margin: 0 0 1% 1%;
+    width: 45%;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
   .menu-toggle {
     display: none;
+  }
+
+  .image-gallery li {
+    float: left;
+    display: block;
+    margin: 0 0 1% 1%;
+    width: 45%;
   }
 }
 
@@ -2564,6 +2644,17 @@ blockquote {
   .single-page-content .portfolio-page-content {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .image-gallery li {
+    float: left;
+    display: block;
+    margin: 0 0 1% 1%;
+    width: 100%;
+  }
+
+  .ajax-page-close-button {
+    display: none !important;
   }
 }
 
