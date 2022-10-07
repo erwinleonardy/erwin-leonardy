@@ -45,9 +45,9 @@
                   <img src="{{ post.cover_img_url }}" alt="{{ post.cover_img_alt }}" title="{{ post.cover_img_alt }}" />
 
                   {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
-                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.tab_name }}"></a>
+                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" alt="{{ post.cover_img_alt }}"></a>
                   {% else %}
-                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.tab_name }}"></a>
+                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" alt="{{ post.cover_img_alt }}"></a>
                   {% endif %}
 
                 </div>
