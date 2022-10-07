@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Erwin
+author: Erwin Leonardy
 title: "How Artificial Intelligence Changes the Way We Live"
 tag: Tech
 image: https://miro.medium.com/max/700/0*mbZiG_ej3Bg8DtaP

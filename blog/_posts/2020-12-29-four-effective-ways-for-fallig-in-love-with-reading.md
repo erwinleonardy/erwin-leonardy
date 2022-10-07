@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Erwin
+author: Erwin Leonardy
 title: "Four Effective Ways for Falling in Love With Reading"
 tag: Productivity
 image: https://miro.medium.com/max/5184/0*Re9HG9ZzmO8KgGRJ

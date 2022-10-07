@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Erwin
+author: Erwin Leonardy
 title: "Mustering up the Temerity to Start a Startup in These Uncertain Times"
 tag: Startup
 image: https://miro.medium.com/max/2400/1*IB8mgsBMck8jR1xo8rf9RQ.png

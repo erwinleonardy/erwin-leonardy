@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Erwin
+author: Erwin Leonardy
 title: "The Three Things that Most Computer Science Programmes Didn't Prepare Us For"
 tag: Tech
 image: https://miro.medium.com/max/10944/0*eACpyztIRq7dRJEu

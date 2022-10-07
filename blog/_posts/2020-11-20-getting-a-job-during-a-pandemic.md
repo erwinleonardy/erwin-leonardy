@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Erwin
+author: Erwin Leonardy
 title: "Getting a Job During a Pandemic"
 tag: Career
 image: https://miro.medium.com/max/1400/0*UEa2AHuwQtApYVN0

@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Erwin
+author: Erwin Leonardy
 title: "How to Utilise the Growth Mindset to Overcome Any Setbacks in Life"
 tag: Life
 image: https://miro.medium.com/max/700/0*TdAvLBJ0VuqRYGRC
