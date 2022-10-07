@@ -2,7 +2,7 @@
 layout: portfolio-content
 author: Erwin Leonardy
 title: Landscapes 🌇
-tag: Personal Events
+tag: Landscapes
 tab_name: category_landscapes
 cover_img_alt: Landscape Cover
 cover_img_url: /img/covers/landscape.jpeg
