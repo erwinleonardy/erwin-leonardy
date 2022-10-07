@@ -1,0 +1,63 @@
+---
+layout: page
+---
+
+<div class="content-area single-page-area">
+  <div class="single-page-content">
+
+		<!-- Start of Article -->
+    <article class="post">
+
+			<!-- Start of Post Content -->
+      <div class="post-content">
+
+        <!-- /Entry header -->
+        <header class="entry-header" style="margin-top: 20px;">
+          <!-- Entry meta -->
+          <div class="entry-meta entry-meta-top">
+            <span>{{ page.tag }}</span>
+          </div>
+          <!-- /Entry meta -->
+
+          <h2 class="entry-title">
+						{{ page.title }}
+
+					<div class="ajax-page-nav">
+						<!-- <div class="nav-item ajax-page-prev-next">
+							<a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
+							<a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
+						</div> -->
+						<div class="nav-item ajax-page-close-button">
+							<a id="ajax-page-close-button" href="/#portfolio"><i class="lnr lnr-cross"></i></a>
+						</div>
+					</div>
+					</h2>
+
+        </header>
+        <!-- /Entry header -->
+
+        <!-- Content -->
+        {% include image-gallery.html folder=page.img_full_res_dir title=page.title %}
+        <!-- End of Content -->
+
+				<!-- Start of Metadata -->
+        <div class="entry-meta entry-meta-bottom">
+          <div class="date-author unselectable">
+            <span class="entry-date">
+              <i class="far fa-clock"></i> <span class="entry-date"> <b>Updated at</b>: {{ page.date | date: "%B %-d, %Y" }}</span>
+            </span>
+            <span class="author vcard">
+             <i class="fas fa-user"></i> {{ page.author }}
+            </span>
+          </div>
+        </div>
+				<!-- End of Metadata -->
+
+      </div>
+			<!-- End of Post Content -->
+
+    </article>
+		<!-- End of Article -->
+
+  </div>
+</div>

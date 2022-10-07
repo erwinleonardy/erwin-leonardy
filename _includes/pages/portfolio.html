@@ -39,108 +39,26 @@
           <!-- Portfolio Grid -->
           <div class="portfolio-grid three-columns">
 
-            <!-- Personal Events -->
-            <figure class="item standard" data-groups='["category_all", "category_personal-events"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/graduation.jpeg" alt="Graduations Cover" title="Graduations Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
+            {% for post in site.categories.portfolio %}
+              <figure class="item standard" data-groups='["category_all", "{{ post.tab_name }}"]'>
+                <div class="portfolio-item-img">
+                  <img src="{{ post.cover_img_url }}" alt="{{ post.cover_img_alt }}" title="{{ post.cover_img_alt }}" />
 
-              <i class="far fa-image"></i>
-              <h4 class="name">Graduations 🎓</h4>
-              <span class="category">Personal Events</span>
-            </figure>
+                  {% if site.url == "https://erwinleonardy.github.io/erwin-leonardy/"  %}
+                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.github_repository_with_slash | prepend: site.url }}" title="{{ post.tab_name }}"></a>
+                  {% else %}
+                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.tab_name }}"></a>
+                  {% endif %}
 
-            <figure class="item standard" data-groups='["category_all", "category_personal-events"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/birthday.jpeg" alt="Birthdays Cover" title="Birthdays Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
+                </div>
 
-              <i class="far fa-image"></i>
-              <h4 class="name">Birthdays 🎂</h4>
-              <span class="category">Personal Events</span>
-            </figure>
-
-            <figure class="item standard" data-groups='["category_all", "category_personal-events"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/rom.jpeg" alt="Marriages Cover" title="Marriages Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Marriages 💍</h4>
-              <span class="category">Personal Events</span>
-            </figure>
-
-            <figure class="item standard" data-groups='["category_all", "category_personal-events"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/personal_event.jpeg" alt="Outsdoor Events Cover" title="Outdoor Events Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Outdoor Events ⚽</h4>
-              <span class="category">Personal Events</span>
-            </figure>
-
-            <!-- Corporate Events -->
-            <figure class="item standard" data-groups='["category_all", "category_corporate-events"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/outdoor_event.jpeg" alt="Labour Day Cover" title="Labour Day Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Labour Day 🏋️‍♂️</h4>
-              <span class="category">Corporate Events</span>
-            </figure>
-
-            <figure class="item standard" data-groups='["category_all", "category_social-events"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/social_event.jpeg" alt="Social Events Cover" title="Social Events Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Social Events 👨‍👩‍👦</h4>
-              <span class="category">Social Events</span>
-            </figure>
-
-            <!-- Others -->
-            <figure class="item standard" data-groups='["category_all", "category_landscapes"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/landscape.jpeg" alt="Lanscapes Cover" title="Landscapes Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Landscapes 🌇</h4>
-              <span class="category">Landscapes</span>
-            </figure>
-
-            <figure class="item standard" data-groups='["category_all", "category_portraits"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/portrait.jpeg" alt="Portraits Cover" title="Portraits Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Portraits 📸</h4>
-              <span class="category">Portraits</span>
-            </figure>
-
-            <figure class="item standard" data-groups='["category_all", "category_products"]'>
-              <div class="portfolio-item-img">
-                <img src="img/covers/product.jpeg" alt="Products Cover" title="Products Cover" />
-                <a href="/portfolio-contents" class="ajax-page-load"></a>
-              </div>
-
-              <i class="far fa-image"></i>
-              <h4 class="name">Products ⌚</h4>
-              <span class="category">Products</span>
-            </figure>
+                <i class="far fa-image"></i>
+                <h4 class="name">{{ post.title }}</h4>
+                <span class="category">{{ post.tag }}</span>
+              </figure>
+            {% endfor %}
           </div>
+          <!-- End of Portfolio Grid -->
         </div>
         <!-- End of Portfolio Content -->
       </div>

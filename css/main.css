@@ -1873,7 +1873,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .ajax-page-nav {
-  text-align: right;
+  float: right;
 }
 
 .ajax-page-nav > div.nav-item {
