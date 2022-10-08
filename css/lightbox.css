@@ -178,6 +178,7 @@ body.lb-disable-scrolling {
 
 
 /* New Styling */
+/* https://github.com/lokesh/lightbox2/issues/641 */
 .lb-outerContainer {
   display: inline-block;
   width: initial !important;
