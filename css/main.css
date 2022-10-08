@@ -2650,11 +2650,20 @@ blockquote {
     float: left;
     display: block;
     margin: 0 0 1% 1%;
-    width: 100%;
+    width: 45%;
   }
 
   .ajax-page-close-button {
     display: none !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .image-gallery li {
+    float: left;
+    display: block;
+    margin: 0 0 1% 1%;
+    width: 100%;
   }
 }
 

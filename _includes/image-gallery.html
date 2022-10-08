@@ -11,6 +11,7 @@
         {% assign title = include.title %}
 
         {% unless file.path contains "@500x500px" %}
+
           {% assign filepathSmall = file.path | replace: file.extname,"@500x500px" | append: file.extname %}
           <li>
             <a href="{{ file.path | relative_url }}" alt="{{ filename }}" data-title="{{ title }}" data-lightbox="{{ title }}">
